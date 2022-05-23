@@ -1,24 +1,11 @@
 # Unit 10 Homework: Surf’s Up
 
-## Before You Begin
-
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the changes to GitHub or GitLab.
-
-![surfs-up.png](Images/surfs-up.png)
-
 ## Instructions
 
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following sections outline the steps you must take to accomplish this task.
 
 ### Part 1: Climate Analysis and Exploration
 
-In this section, you’ll use Python and SQLAlchemy to perform basic climate analysis and data exploration of your climate database. Complete the following tasks by using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+In this section, we’ll use Python and SQLAlchemy to perform basic climate analysis and data exploration of your climate database. Complete the following tasks by using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 * Use the provided [starter notebook](climate_starter.ipynb) and [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
 
@@ -82,7 +69,7 @@ To perform an analysis of stations in the area, do the following:
 
 ### Part 2: Design Your Climate App
 
-Now that you have completed your initial analysis, you’ll design a Flask API based on the queries that you have just developed.
+Now that we have completed your initial analysis, you’ll design a Flask API based on the queries that you have just developed.
 
 Use Flask to create your routes, as follows:
 
@@ -146,7 +133,7 @@ Conduct an analysis to answer the following question: Hawaii is reputed to enjoy
 
 #### Temperature Analysis 2
 
-You want to take a trip from August 1 to August 7 of this year, but you are worried that the weather will be less than ideal. Using historical data in the dataset, find out what the temperature has previously been for this timeframe.
+we want to take a trip from August 1 to August 7 of this year, but you are worried that the weather will be less than ideal. Using historical data in the dataset, find out what the temperature has previously been for this timeframe.
 
 **Note:** The starter notebook contains a function called `calc_temps` that will accept a start date and end date in the format `%Y-%m-%d`. The function will return the minimum, average, and maximum temperatures for that range of dates.
 
@@ -166,7 +153,7 @@ Complete the following steps:
 
 #### Daily Rainfall Average
 
-Now that you have an idea of the temperature, let’s find out what the rainfall has been. You don't want to visit if it rains the whole time! Complete the following steps:
+Now that we have an idea of the temperature, let’s find out what the rainfall has been. You don't want to visit if it rains the whole time! Complete the following steps:
 
 * Calculate the rainfall per weather station using the previous year's matching dates.
 
