@@ -35,73 +35,19 @@ To perform an analysis of stations in the area, do the following:
 
 * Design a query to find the most active stations (the stations with the most rows).
 
-    * List the stations and observation counts in descending order.
-
-    * Which station id has the highest number of observations?
-
-    * Using the most active station id, calculate the lowest, highest, and average temperatures.
-
-    * **Hint:** You will need to use functions such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
-
+   
 * Design a query to retrieve the previous 12 months of temperature observation data (TOBS).
 
-    * Filter by the station with the highest number of observations.
-
-    * Query the previous 12 months of temperature observation data for this station.
-
-    * Plot the results as a histogram with `bins=12`, as shown in the following image:
-
+  
     ![station-histogram](Images/station-histogram.png)
 
-* Close out your session.
-
-- - -
 
 ### Part 2: Design Your Climate App
 
-Now that we have completed your initial analysis, you’ll design a Flask API based on the queries that you have just developed.
+Design a Flask API based on the queries that have just developed.
 
-Use Flask to create your routes, as follows:
 
-* `/`
-
-    * Homepage.
-
-    * List all available routes.
-
-* `/api/v1.0/precipitation`
-
-    * Convert the query results to a dictionary using `date` as the key and `prcp` as the value.
-
-    * Return the JSON representation of your dictionary.
-
-* `/api/v1.0/stations`
-
-    * Return a JSON list of stations from the dataset.
-
-* `/api/v1.0/tobs`
-
-    * Query the dates and temperature observations of the most active station for the previous year of data.
-
-    * Return a JSON list of temperature observations (TOBS) for the previous year.
-
-* `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`
-
-    * Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a given start or start-end range.
-
-    * When given the start only, calculate `TMIN`, `TAVG`, and `TMAX` for all dates greater than or equal to the start date.
-
-    * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates from the start date through the end date (inclusive).
-
-## Hints
-
-* You will need to join the station and measurement tables for some of the queries.
-
-* Use Flask `jsonify` to convert your API data into a valid JSON response object.
-
-### Bonus: Other Recommended Analyses
-
-The following are optional challenge queries that we recommend you attempt, but they are not required for this assignment.
+### Bonus:
 
 * Use the provided [temp_analysis_bonus_1_starter.ipynb](temp_analysis_bonus_1_starter.ipynb) and [temp_analysis_bonus_2_starter.ipynb](temp_analysis_bonus_2_starter.ipynb) starter notebooks for their respective bonus challenge.
 
