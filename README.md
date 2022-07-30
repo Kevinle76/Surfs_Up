@@ -1,21 +1,11 @@
-# Unit 10 Homework: Surf’s Up
+Surf’s Up
 
 ## Instructions
 
 
 ### Part 1: Climate Analysis and Exploration
 
-In this section, we’ll use Python and SQLAlchemy to perform basic climate analysis and data exploration of your climate database. Complete the following tasks by using SQLAlchemy ORM queries, Pandas, and Matplotlib.
-
-* Use the provided [starter notebook](climate_starter.ipynb) and [hawaii.sqlite](Resources/hawaii.sqlite) files to complete your climate analysis and data exploration.
-
-* Use SQLAlchemy’s `create_engine` to connect to your SQLite database.
-
-* Use SQLAlchemy’s `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
-
-* Link Python to the database by creating a SQLAlchemy session.
-
-* **Important:** Don't forget to close out your session at the end of your notebook.
+In this section, we’ll use Python and SQLAlchemy to perform basic climate analysis and data exploration of climate database. 
 
 #### Precipitation Analysis
 
@@ -161,38 +151,9 @@ Now that we have an idea of the temperature, let’s find out what the rainfall 
 
 ### Daily Temperature Normals
 
-Calculate the daily normals for the duration of your trip. Normals are the averages for the minimum, average, and maximum temperatures.
 
-You are provided with a function called `daily_normals` that will calculate the daily normals for a specific date. This date string will be in the format `%m-%d`. Make sure to use all historic TOBS that match that date string.
 
-Complete the following steps:
-
-* Set the start and end date of the trip.
-
-* Use the date to create a range of dates.
-
-* Strip off the year, and save a list of strings in the format `%m-%d`.
-
-* Use the `daily_normals` function to calculate the normals for each date string, and append the results to a list called `normals`.
-
-* Load the list of daily normals into a Pandas DataFrame, and set the index equal to the date.
-
-* Use Pandas to plot an area plot (`stacked=False`) for the daily normals, as shown in the following image:
+* Plot an area plot (`stacked=False`) for the daily normals
 
   ![daily-normals](Images/daily-normals.png)
 
-* Close out your session.
-
-## Rubric
-
-[Unit 10 Homework Rubric](https://docs.google.com/document/d/1gT29iMF3avSvJruKpcHY4qovP5QitgXePqtjC6XESI0/edit?usp=sharing)
-
-- - -
-
-## References
-
-Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012: An overview of the Global Historical Climatology Network-Daily Database. Journal of Atmospheric and Oceanic Technology, 29, 897-910, [https://doi.org/10.1175/JTECH-D-11-00103.1](https://doi.org/10.1175/JTECH-D-11-00103.1)
-
-- - -
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
