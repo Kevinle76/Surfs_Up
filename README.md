@@ -1,15 +1,13 @@
-Surf’s Up
+## Surf’s Up
 
-## Instructions
+Using Python and SQLAlchemy to perform basic climate analysis and data exploration of climate database. 
+
+## Objectives:
+
+1. Climate Analysis and Exploration
 
 
-### Part 1: Climate Analysis and Exploration
-
-In this section, we’ll use Python and SQLAlchemy to perform basic climate analysis and data exploration of climate database. 
-
-#### Precipitation Analysis
-
-To perform an analysis of precipitation in the area, do the following:
+2. Precipitation Analysis
 
 * Find the most recent date in the dataset.
 
@@ -27,7 +25,7 @@ To perform an analysis of precipitation in the area, do the following:
 
 * Use Pandas to print the summary statistics for the precipitation data.
 
-#### Station Analysis
+3. Station Analysis
 
 To perform an analysis of stations in the area, do the following:
 
